@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <link rel="stylesheet" href="./style/halloween.css">
+    <script src="./javascript/Halloween.js"></script>
+</head>
+<body>
+    <!--el layout básico incluye un container-->
+    <!--Atención, esta página no va a ser responsive-->
+    <div id="container">
+    <p id="p1">Scary Halloween Party</p>
+    <p id="p2">Don´t try to touch the angel</p>
+    <img id="i1" src="./images/angel.gif" alt="" class="hidden">
+    <div id="angel"onmouseover="mostrar('i1'); sonar('sonido2')" onmouseout="ocultar('i1')"></div>
+    <p id="p3">Don´t look at the moon</p>
+    <img id="i2" src="./images/moon.gif" alt="" class="hidden">
+    <div id="moon"onmouseover="mostrar('i2'); sonar('sonido1')" onmouseout="ocultar('i2')"></div>
+    <p id="p4">Don´t knock the window</p>
+    <img id="i3" src="./images/ventana.gif" alt="" class="hidden">
+    <div id="window"onmouseover="mostrar('i3'); sonar('sonido3')" onmouseout="ocultar('i3')"></div>
+    </div>
+    <audio src="sounds/sonido mujer.mp3" id="sonido1" ></audio>
+    <audio src="sounds/sonidofondo.mp3" id="sonidofondo" ></audio>
+    <audio src="sounds/sonidomonstruo.mp3" id="sonido2" ></audio>
+    <audio src="sounds/sonido3.mp3" id="sonido3" ></audio>
+    <audio src="sounds/sonidomonstruo.mp3" id="sonido4" ></audio>
+    <div id="boton-div">
+        <button onclick="ocultar('boton-div'); sonar('sonidofondo')" id="boton">Start</button>        
+    </div>
+</body>
+</html>
